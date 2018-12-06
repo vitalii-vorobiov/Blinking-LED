@@ -107,6 +107,7 @@ int main(void)
   while (1)
   {
 	  if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)) {
+		  HAL_Delay(50);
 		  buttonPresses += 1;
 	  }
 
